@@ -1,0 +1,55 @@
+.banner {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url('../assets/banner.jpeg');
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    color: white;
+}
+
+.banner::before {
+    content: "";
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, .75)
+}
+
+.banner__profileImg {
+    background-image: url('../assets/profile.jpg');
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+
+.banner__textContainer {
+    /* font-size: 40px; */
+    position: sticky;
+    bottom: 30px;
+}
+
+.banner__nameContainer{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner__greeting{
+    font-size: 20px;
+}
