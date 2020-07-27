@@ -4,6 +4,7 @@
     align-items: center;
     text-align: left;
     transition: all 0.5s;
+    overflow: auto;
 }
 
 .post:hover {}
@@ -43,13 +44,13 @@
 
 .post__imageContainer {
     height: 100%;
-    flex-basis: 25%;
+    flex-basis: 15%;
     overflow: hidden;
     transition: all 0.5s;
 }
 
 .post__imageContainer:hover {
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 
 .post__image {
@@ -74,4 +75,20 @@
     line-height: 1.4;
     max-height: 73px;
     overflow: hidden;
+}
+
+.modal:focus {
+    outline: none;
+}
+
+.modal__imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal__image {
+    max-width: 100%;
+    max-height: 200px;
 }
